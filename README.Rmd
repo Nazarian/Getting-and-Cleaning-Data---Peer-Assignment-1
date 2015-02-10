@@ -1,0 +1,33 @@
+---
+title: "README"
+author: "Nazarian"
+date: "2015-02-10"
+output: html_document
+---
+
+Introduction
+------------
+The repository contains the assignment for the course project of Coursera's course "Getting and Cleaning Data"
+
+About the raw data
+------------------
+
+For the test set 
+
+* The names/features are unlabeled and can be found in the x_test.txt. 
+* The activity labels are in the y_test.txt file, and the meaning on the activity_labels.txt file. 
+* The test subjects are in the subject_test.txt file.
+
+Same for the train set
+
+About the script and the tidy dataset
+-------------------------------------
+The script run_analysis.r merges both data sets. You must be standing in the UCI HAR Dataset directory, with all the subdirectories available for access. 
+
+After merging the data sets, the labels are then added and only columns that have to do with what is asked (mean and standard deviation) are kept. The rest are erased. 
+
+Finally, the script creates a data set with the means of the columns, and then it writes it to a file called "Tidy_data.txt".
+
+About the Code Book
+-------------------
+The Codebook.md file explains all the variables. 
